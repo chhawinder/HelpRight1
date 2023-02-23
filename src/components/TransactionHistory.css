@@ -1,0 +1,33 @@
+.transaction-history {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .transaction-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .transaction-date {
+    width: 33%;
+    text-align: left;
+  }
+  
+  .transaction-description {
+    width: 33%;
+    text-align: center;
+  }
+  
+  .transaction-amount {
+    width: 33%;
+    text-align: right;
+  }

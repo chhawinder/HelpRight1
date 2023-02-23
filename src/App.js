@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import TransactionHistory from "./components/TransationHistory";
 
 function App() {
+  const [transactions, setTransactions] = useState([
+    {
+      id: 1,
+      type: "deposit",
+      amount: 1000,
+    },
+    {
+      id: 2,
+      type: "withdrawal",
+      amount: 500,
+    },
+  ]);
+
+  const [transactionType, setTransactionType] = useState("deposit");
+  const [transactionAmount, setTransactionAmount] = useState("");
+
+  const addTransaction = () => {
+    const newTransaction = {
+      id: Math.floor(Math.random() * 100000),
+      type: transactionType,
+      amount: transactionAmount,
+    };
+    setTransactions([...transactions, newTransaction]);
+    setTransactionAmount("");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    <TransactionHistory/>
+    </>
   );
 }
 

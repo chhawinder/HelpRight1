@@ -1,0 +1,28 @@
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .transaction-date {
+    width: 33%;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .transaction-description {
+    width: 33%;
+    text-align: center;
+  }
+  
+  .transaction-amount {
+    width: 33%;
+    text-align: right;
+    font-weight: bold;
+    color: #1a535c;
+  }
