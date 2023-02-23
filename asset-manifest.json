@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HelpRight/static/css/main.ce7529ff.css",
+    "main.js": "/HelpRight/static/js/main.fb8530c2.js",
+    "static/js/787.c13886fd.chunk.js": "/HelpRight/static/js/787.c13886fd.chunk.js",
+    "index.html": "/HelpRight/index.html",
+    "main.ce7529ff.css.map": "/HelpRight/static/css/main.ce7529ff.css.map",
+    "main.fb8530c2.js.map": "/HelpRight/static/js/main.fb8530c2.js.map",
+    "787.c13886fd.chunk.js.map": "/HelpRight/static/js/787.c13886fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce7529ff.css",
+    "static/js/main.fb8530c2.js"
+  ]
+}
